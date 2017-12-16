@@ -1,12 +1,11 @@
-// import React, {Component} from 'react';
+import _ from 'lodash';
 import { FETCH_POSTS } from '../actions';
 
 export default function(state = {}, actions) {
 	switch(actions.type) {
 		case FETCH_POSTS:
-			console.log(actions.payload.data);
+			return _.mapKeys(actions.payload.data, 'id');
 		default:
 			return  state
 	}
-
 }
