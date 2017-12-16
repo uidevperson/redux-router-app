@@ -1,17 +1,20 @@
-// import _ from 'lodash';
 import React, { Component } from 'React';
-// import { connect } from 'react-redux';
-// import { fetchPosts } from '../actions';
+import { Field, reduxForm } from 'redux-form';
 
 class PostsNew extends Component {
 		render() {
 			return (
-			<div>
-				POSTSNEW
-			</div>
+			<form>
+				<Field 
+					name="title"
+				
+				/>
+			</form>
 			);
 		}
 	}
 
 
-export default PostsNew;
+export default reduxForm({
+	form: 'postsNewForm'
+})(PostsNew);
