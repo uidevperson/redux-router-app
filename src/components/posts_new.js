@@ -11,6 +11,7 @@ class PostsNew extends Component {
 						type="text" 
 						{...field.input} 
 					/>
+					{field.meta.error}
 				</div>
 			);
 		}
@@ -39,7 +40,7 @@ class PostsNew extends Component {
 	}
 
 function validate(values) {
-	
+
 	const errors = {};
 	// validate the inputs from values
 	if(!value.title || value.title.length < 3){
