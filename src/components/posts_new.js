@@ -5,13 +5,13 @@ class PostsNew extends Component {
 		renderField(field) {
 			return (
 				<div className="form-group">
-				<label>{field.label}</label>
+				<label><b>{field.label}</b></label>
 					<input 
 						className="form-control" 
 						type="text" 
 						{...field.input} 
 					/>
-					{ field.meta.error }
+					{ field.meta.touched ? field.meta.error : '' }
 				</div>
 			);
 		}
