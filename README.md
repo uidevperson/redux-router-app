@@ -3,7 +3,7 @@ react router app
 
 ```
 > git clone https://github.com/uidevperson/redux-router-app.git
-> cd ReduxSimpleStarter
+> cd redux-router-app
 > npm install
 > npm start
 ```
